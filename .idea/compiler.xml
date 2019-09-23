@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
+        <module name="productViewServiceFeign" />
+        <module name="productDataService" />
+        <module name="childMavenProject" />
+        <module name="productViewServiceRibbon" />
+        <module name="configserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="productdataservice" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="childMavenProject" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="productDataService" options="-parameters" />
+      <module name="productViewServiceFeign" options="-parameters" />
+      <module name="productViewServiceRibbon" options="-parameters" />
+      <module name="productdataservice" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
